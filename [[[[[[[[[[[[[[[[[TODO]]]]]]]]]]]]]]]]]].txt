@@ -1,0 +1,28 @@
+//https://www.npmjs.com/package/material-react-toastify
+
+1-https://froala.com/wysiwyg-editor/docs/framework-plugins/react/ [DONE]
+2-Finish article crud[DONE]
+3-article image upload[DONE]
+4-Places with crud [DONE]
+5-Booking functionality [DONE]
+6-MetaData Component [DONE]
+
+
+7-replace with req.user [DONE]
+
+
+8-this.state.workingDays array with table [DONE]
+9-delete entire folder instead of cloudinary.destroy()  [MORE SEARCH NEEDED]
+10-send sms to dad too
+11-add price in reservation  [DONE]
+12-book with vezeeta buttons [DONE]
+13-google directions [DONE]
+14-Loading component https://getbootstrap.com/docs/5.0/components/spinners/  [DONE]
+15-API Error Handling
+16-Add Spinners in forms [DONE]
+17-CHANGE CLOUDINARY TO UPLOAD STREAM ALL [DONE]
+18-CHECK DATABASE LINKINGS [DONE]
+19-CHECK IF IMAGE NOT SELECTED FIX [DONE]
+20-input fields validation [DONE]
+21- also check out in articles [DONE]
+22- social share buttons with meta data [DONE]

@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo&display=swap");
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.nav-style {
+  background-color: #221d23; /* fallback for old browsers */
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.navbar.transparent.navbar-inverse .navbar-inner {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+#circle {
+  width: 90px;
+  height: 90px;
+  line-height: 50px;
+  border-radius: 50%;
+  font-size: 24px;
+  color: yellow;
+  text-align: center;
+  background: black;
+  display: block;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  text-align: center;
+  display: flex;
+}
+
+.login-img {
+}
+
+@media only screen and (max-width: 700px) {
+  .we-care-title {
+    font-size: 5vw;
+  }
+  .we-care-title-2 {
+    font-size: 6vw;
+  }
+  .we-care-title-3 {
+    font-size: 9vw;
+  }
+  .review-avatar {
+    width: 18vw;
+  }
+  #circle {
+    width: 50px;
+    height: 50px;
+    line-height: 20px;
+    font-size: 16px;
+  }
+  #loginImg {
+    height: 45rem;
+    width: 45rem;
+  }
+  .article-avatar {
+    display: block;
+  }
+}
+@media only screen and (min-width: 700px) {
+  .we-care-title {
+    font-size: 4vw;
+  }
+  .we-care-title-2 {
+    font-size: 5vw;
+  }
+  .we-care-title-3 {
+    font-size: 8vw;
+  }
+  .review-avatar {
+    width: 12vw;
+  }
+  #loginImg {
+    height: 55rem;
+    width: 55rem;
+  }
+}
+
+@media only screen and (min-width: 650px) {
+  .article-avatar {
+    display: inline-block;
+  }
+}
+
+.hospital-container {
+  background-image: url("blur-hospital.jpg");
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* opacity: 0.5; */
+}
+
+#topText {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  text-align: left;
+  width: 100%;
+  height: 100%;
+  background: url(bottom_shadow.png) repeat-x 0;
+  padding: 40% 20px 10px;
+  padding-top: 0px;
+  transition: all 0.5s;
+}
+.login-container {
+  padding: 50px 20px;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  border-radius: 25px;
+  margin: 100px 50px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* .login-page-container {
+  background-image: url("heart_login.png");
+  height: 100%;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size:contain;
+} */
+
+.profile-card {
+  padding: 20px;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  border-radius: 50px;
+}
+/* #avatarImg:hover {
+  border: 
+} */
+
+.author-mention {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+.by-class {
+  font-size: 1.1rem;
+  font-weight: 700;
+  display: inline-block;
+}
+.by-class-2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  position: relative;
+  bottom: 4px;
+  font-weight: 700;
+}
+.date-added-style {
+  font-size: 0.9rem;
+  display: inline-block;
+}
+.edit-btn {
+  /* float: right; */
+  width: 70px;
+}
+#coverForArticle {
+  width: 100%;
+  display: block;
+  position: relative;
+  top: 3px;
+  height: 450px;
+}
+.article-div {
+  padding: 0px 15px;
+  display: block;
+  margin: auto;
+  width: 85%;
+}
+.radio-btn-checked {
+  color: red;
+}
+
+.reservation-container {
+  background-image: url("create_reservation.jpg");
+  /* Full height */
+  height: 100%;
+  width: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* opacity: 0.5; */
+}
+
+.input-container {
+  background-image: url("input-container.jpg");
+  /* Full height */
+  /* Center and scale the image nicely */
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.9;
+}
+.iti--allow-dropdown {
+  width: 100% !important;
+}

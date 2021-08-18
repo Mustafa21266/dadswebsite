@@ -55,7 +55,7 @@ exports.createReservation = async (req, res, next) => {
                 في : ${placeObj.name} , ${placeObj.address}
                 `,
                     from: '+19723626780',
-                    to: '+201278066382'
+                    to: '+201002229745'
 
                 }).then(async message => {
                     console.log(message)
@@ -128,7 +128,7 @@ exports.cancelReservation = async (req, res, next) => {
             في : ${reservation.reservationDetails.place.name} , ${reservation.reservationDetails.place.address}
             `,
                 from: '+19723626780',
-                to: '+201278066382'
+                to: '+201002229745'
 
             })
             .then(message => {

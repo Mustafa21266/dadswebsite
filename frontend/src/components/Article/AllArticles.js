@@ -80,9 +80,10 @@ class AllArticles extends Component {
     // if (searchInput.value.length === 0) {
     //     this.setState({ articles: this.originalArticles });
     // }
+    this.setCurrentPageNo(1);
     store
       .dispatch(searchArticles(searchInput.value, this.orderBy))
-      .then((data) => {
+      .then((data) => {    
         this.setState({ articles: data });
       });
   }

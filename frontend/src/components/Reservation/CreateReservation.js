@@ -35,6 +35,7 @@ class CreateReservation extends Component {
   };
   startDate = new Date();
   btnActivate = true;
+  dateNow = Date.now();
   constructor(props) {
     super(props);
     this.state = {
@@ -160,7 +161,7 @@ class CreateReservation extends Component {
     // );
     for (let i = 0; i < this.state.selectedPlace.workingDays.length; i++) {
       if (
-        Date.now() <= Date.parse(this.startDate) &&
+        this.dateNow <= Date.parse(this.startDate) &&
         this.state.selectedPlace.workingDays.filter(
           (day) =>
             day.day === this.daysObj[String(this.startDate).split(" ")[0]]

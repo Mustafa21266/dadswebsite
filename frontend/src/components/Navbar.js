@@ -43,7 +43,7 @@ class Navbar extends Component {
               {this.state.redirect ? <Redirect to="/"></Redirect>: ""}
 <nav dir="rtl" className="navbar navbar-expand-lg w-100 nav-style animate__animated animate__slideInDown animate__slower" style={{position: 'fixed',top: 0,zIndex: 5}}>
   <div className="container-fluid">
-    <Link className="navbar-brand" onClick={this.resetNav} to="/"><img src="Capture.PNG" style={{width: "200px", height: "70px"}}></img></Link>
+    <Link className="navbar-brand" onClick={this.resetNav} to="/"><img src="https://res.cloudinary.com/dvlnovdyu/image/upload/v1629335175/Capture_b1uf1r.png" style={{width: "200px", height: "70px"}}></img></Link>
     <button style={{color:"white"}} className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <i className="fas fa-bars"></i>
     </button>

@@ -6,9 +6,9 @@ const reviews_vezeeta = require('../utils/reviews_vezeeta.json')
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const streamifier = require('streamifier');
-const accountSid = process.env.TWILIO_ACCOUNT_SID;
-const authToken = process.env.TWILIO_AUTH_TOKEN;
-const client = require('twilio')(accountSid, authToken);
+// const accountSid = process.env.TWILIO_ACCOUNT_SID;
+// const authToken = process.env.TWILIO_AUTH_TOKEN;
+// const client = require('twilio')(accountSid, authToken);
 exports.getVezeetaReviews = async (req, res, next) => {
     // console.log(require('crypto').randomBytes(10).toString('hex'))
     reviews_vezeeta.forEach(review => {
@@ -162,17 +162,17 @@ exports.forgotPassword = async (req, res, next) => {
     // const resetURL = `${process.env.FRONTEND_URL}/password/reset/${resetToken}`
     const message = `Your password reset URL is:\n\n${resetURL}\n\nif you haven't requested a password reset please ignore this message!`;
     try {
-        client.messages
-            .create({
-                body: message,
-                from: '+19723626780',
-                to: user.phoneNo
+        // client.messages
+        //     .create({
+        //         body: message,
+        //         from: '+19723626780',
+        //         to: user.phoneNo
 
-            })
-            .then(message => {
-                console.log(message.sid)
+        //     })
+        //     .then(message => {
+        //         console.log(message.sid)
             
-            });
+        //     });
         res.status(200).json({
             success: true,
             message: `Password Reset Link Successfully Sent To ${user.phoneNo}`

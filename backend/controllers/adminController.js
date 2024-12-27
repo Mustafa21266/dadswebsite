@@ -10,9 +10,9 @@ const reviews_vezeeta = require('../utils/reviews_vezeeta.json')
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const streamifier = require('streamifier');
-const accountSid = process.env.TWILIO_ACCOUNT_SID;
-const authToken = process.env.TWILIO_AUTH_TOKEN;
-const client = require('twilio')(accountSid, authToken);
+// const accountSid = process.env.TWILIO_ACCOUNT_SID;
+// const authToken = process.env.TWILIO_AUTH_TOKEN;
+// const client = require('twilio')(accountSid, authToken);
 exports.createArticle = async (req, res, next) => {
     const user = await User.findById(req.user._id)
     if (!user || user.role !== 'admin') {
@@ -396,14 +396,14 @@ exports.updateReservationStatus = async (req, res, next) => {
         reservation.status = status
         await reservation.save();
         if (status === "تم الحضور") {
-            client.messages
-                .create({
-                    body: `شكرا لزيارتكم عيادات الدكتور صلاح الجوهري`,
-                    from: '+18302436955',
-                    to: '+201553786175'
+            // client.messages
+            //     .create({
+            //         body: `شكرا لزيارتكم عيادات الدكتور صلاح الجوهري`,
+            //         from: '+18302436955',
+            //         to: '+201553786175'
 
-                })
-                .then(message => console.log(message.sid));
+            //     })
+            //     .then(message => console.log(message.sid));
         } else if (status === "لم يتم الحضور") {
             // client.messages
             // .create({

@@ -34,9 +34,9 @@ const { Console } = require("console");
 app.use("/api/v1", reservation);
 
 if (process.env.NODE_ENV === "PRODUCTION") {
-  app.use(express.static(path.join(__dirname, "./frontend/build")));
+  app.use(express.static(path.join(__dirname, "../frontend/build")));
   app.get('*', function (req, res) {
-  const index = path.join(__dirname, 'build', 'index.html');
+  const index = path.join(__dirname, '../frontend/build', 'index.html');
   res.sendFile(index);
 });
 }

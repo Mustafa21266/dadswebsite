@@ -34,9 +34,9 @@ const { Console } = require("console");
 app.use("/api/v1", reservation);
 
 if (process.env.NODE_ENV === "PRODUCTION") {
-  app.use(express.static("/app/frontend/build"));
+  app.use(express.static("/app/frontend/public/build"));
   app.get("*", (req, res) => {
-    res.sendFile("/app/frontend/build/index.html");
+    res.sendFile("/app/frontend/public/build/index.html");
   });
 }
 

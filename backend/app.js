@@ -35,10 +35,10 @@ app.use("/api/v1", reservation);
 
 if (process.env.NODE_ENV === "PRODUCTION") {
     //static folder add
-app.use(express.static('app/frontend/build'));
+app.use(express.static('frontend/build'));
 app.get("*", function (req, res) {
   // res.sendFile(path.resolve('client', 'build' , 'index.html'));
-  res.sendFile(path.resolve("app/frontend/build", "index.html"));
+  res.sendFile(path.resolve("frontend/build", "index.html"));
 });
 }
 
